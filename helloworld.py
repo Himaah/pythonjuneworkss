@@ -1,0 +1,1 @@
+print("god is good")
