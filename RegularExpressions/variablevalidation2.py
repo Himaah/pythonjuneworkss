@@ -5,7 +5,7 @@
 
 from re import fullmatch
 
-variable_name="k6"
+variable_name="k8"
 
 pattern="[k-m][369][a-zA-Z0-9@]*"
 

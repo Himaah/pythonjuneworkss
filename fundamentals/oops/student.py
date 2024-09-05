@@ -1,7 +1,7 @@
 class Student:
 
     
-    def set_details(self,roll_no,name,gender,course,adress):
+    def __init__(self,roll_no,name,gender,course,adress):
 
         self.rollnum=roll_no
         self.name=name
@@ -12,8 +12,12 @@ class Student:
     def display_student(self):
         print(self.rollnum,self.name,self.gender,self.course,self.adress)
 
+    def __str__(self):
+        return self.name
+        
+
 # create objects
 
-student_instance=Student()
-student_instance.set_details(12,"saniya","female","python django","liya pg")
-student_instance.display_student()
+student_instance=Student(12,"saniya","female","python django","liya pg")
+# student_instance.display_student()
+print(student_instance)
